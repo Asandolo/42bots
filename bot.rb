@@ -23,7 +23,7 @@ rescue Exception
   puts "Impossible de lire le fichier de group.42, il est surement vide."
 end
 
-bot = Discordrb::Commands::CommandBot.new token: 'DISCORD TOKEN', client_id: 'DISCORD CLIENT ID', prefix: '42'
+bot = Discordrb::Commands::CommandBot.new token: 'DISCORD_TOKEN', client_id: 'DISCORD_CLIENT_ID', prefix: 'PREFIX'
 
 UID = "42 UUID"
 SECRET = "42 SECRET"
@@ -32,7 +32,7 @@ token = client.client_credentials.get_token
 
 bot.command(:reload, help_available: false) do |event|
   token = client.client_credentials.get_token
-  event.respond "Le token 42 a bien ete recharge !"
+  event.respond "Le token 42 a bien ete rechargé !"
   nil
 end
 
@@ -47,7 +47,7 @@ bot.command(:invit, max_args: 0, min_args: 0, usage: "invit", description: "Lien
   event.respond "https://discordapp.com/oauth2/authorize?&client_id=388110639220129813&scope=bot&permissions=0"
 end
 
-bot.command(:source, max_args: 0, min_args: 0, usage: "source", description: "Lien du code sourcet") do |event|
+bot.command(:source, max_args: 0, min_args: 0, usage: "source", description: "Lien du code source") do |event|
   event.respond "https://github.com/Asandolo/42bots"
 end
 
