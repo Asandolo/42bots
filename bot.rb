@@ -25,8 +25,8 @@ end
 
 bot = Discordrb::Commands::CommandBot.new token: 'DISCORD_TOKEN', client_id: 'DISCORD_CLIENT_ID', prefix: 'PREFIX'
 
-UID = "42 UUID"
-SECRET = "42 SECRET"
+UID = "42_UUID"
+SECRET = "42_SECRET"
 client = OAuth2::Client.new(UID, SECRET, site: "https://api.intra.42.fr")
 token = client.client_credentials.get_token
 
