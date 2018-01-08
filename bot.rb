@@ -47,7 +47,7 @@ bot.command(:invit, max_args: 0, min_args: 0, usage: "invit", description: "Lien
   event.respond "https://discordapp.com/oauth2/authorize?&client_id=388110639220129813&scope=bot&permissions=0"
 end
 
-bot.command(:invit, max_args: 0, min_args: 0, usage: "invit", description: "Lien d'invitation du bot") do |event|
+bot.command(:source, max_args: 0, min_args: 0, usage: "source", description: "Lien du code sourcet") do |event|
   event.respond "https://github.com/Asandolo/42bots"
 end
 
